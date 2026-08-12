@@ -18,6 +18,6 @@ conversation=[
     AIMessage('Python is a interpreter language'),
     HumanMessage('When was it released?')
     ]
-response=model.invoke(conversation)
-print(response)
-print(response.content)
+for ch in model.stream(conversation):
+    print(ch.text,end=' ',flush=True)
+
