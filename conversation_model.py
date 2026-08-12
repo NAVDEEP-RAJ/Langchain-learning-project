@@ -18,6 +18,6 @@ conversation=[
     AIMessage('Python is a interpreter language'),
     HumanMessage('When was it released?')
     ]
-for ch in model.stream(conversation):
-    print(ch.text,end=' ',flush=True)
+for ch in model.stream('What is python'):
+    print(ch.text,end=' ',flush=False)
 
