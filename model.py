@@ -12,7 +12,6 @@ model = init_chat_model(
     "google_genai:gemini-3.1-flash-lite",
     temperature=0.7
 )
-response=model.invoke('Hello, What is python? ')
-
-print(response)
-print(response.content)
+response=model.stream('What is the Langchain ')
+for i in response:
+    print(i.text,end=' ')
