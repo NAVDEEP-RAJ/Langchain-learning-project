@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Environment
 .env
 .venv/
@@ -19,3 +20,15 @@ models/
 # API keys
 *.pem
 *.key
+=======
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+>>>>>>> f923dbf (Add LangChain learning setup)
